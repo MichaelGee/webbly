@@ -1,15 +1,60 @@
-.Navbar{
-  color: white !important;
+.container{
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+.navbar{
+  padding: 1.5rem 0 0 0 !important;
+  background: white !important;
+} 
+
+.links{
+  color: black !important;
+}
+span{
+  font-size: 2rem;
+}
+.brand{
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+Button{
+  width: 7rem !important;
+}
+ .section1{
+   justify-content: center;
+   text-align: center;
+   padding: 5rem 0 5rem 0;
+ }
+
+.input-group-text{
+  background: white !important;
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+h4{
+  line-height: 2.3 !important;
+}
+h2{
+  font-size: 3rem !important;
+}
 
+ .search{
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+ }
+input.search.form-control{
+  border-right: white !important;
+  border-radius: 25px !important;
+  padding: 1.5rem;
+}
+
+.searchButton {
+  border-left: white !important;
+  margin-right: 2px !important;
+  border-radius: 20px !important;
+}
+
+.card_container{
+  display: flex;
+  justify-content: center;
+}
