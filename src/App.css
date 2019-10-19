@@ -37,11 +37,7 @@ h2{
   font-size: 3rem !important;
 }
 
- .search{
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
- }
+ 
 input.search.form-control{
   border-right: white !important;
   border-radius: 25px !important;
@@ -52,9 +48,59 @@ input.search.form-control{
   border-left: white !important;
   margin-right: 2px !important;
   border-radius: 20px !important;
+  
 }
 
 .card_container{
   display: flex;
-  justify-content: center;
+  align-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.first_card, .second_card, .third_card{
+  justify-content: space-between;
+  /* margin:  0 1.5rem; */
+  
+}
+.section2{
+  display: flex;
+  height: auto;
+  margin-top: 3rem;
+}
+.icon{
+  font-size: 4rem;
+  color: white;
+  margin: 22% 12% 0% 10%;
+  align-content: center;
+  text-align: center;
+}
+
+.circle{
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  background: blue;
+  border-radius: 50%;
+}
+
+.notify{
+  width: 70% !important;
+  text-align: center;
+  margin: 0 auto;
+}
+.notifyMain{
+  border-radius: 40px !important;
+}
+.card_body{
+  text-align: center;
+}
+@media (max-width: 990px){
+  .card_container{
+    flex-direction: column;
+  }
+  .first_card, .second_card, .third_card{
+    width: 100%;
+  }
 }

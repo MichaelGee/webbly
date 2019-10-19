@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <div>
       <Navi />
-      <Col md={{ span: 6, offset: 3 }}>
+      <Col>
         <section className='section1'>
           <div className='container'>
             {/* Section 1 text */}
@@ -39,6 +39,32 @@ const Homepage = () => {
         </section>
       </Col>
       <Cards />
+      <section className='section2'>
+        <article className='article_column1'>
+          <h4 className='article_title1'>Popular Articles</h4>
+          <p>Creating a new project</p>
+          <p>Export assets & images as a zip file</p>
+          <p>Deploy a project to the cloud with AWS</p>
+          <p>Create a team and manage access tokens</p>
+          <p>Upgrade your account</p>
+        </article>
+        <article className='article_column2'>
+          <h4 className='article_title2'>Latest Tutorials</h4>
+          <p>Designing and building a web app from scratch</p>
+          <p>How to use sketch symbols</p>
+          <p>Node authentication with passport</p>
+          <p>React Native todo app</p>
+          <p>How to set up continous integration server</p>
+        </article>
+        <article className='article_column3'>
+          <h4 className='article_title3'>From our Forums</h4>
+          <p>How to set up custom DNS: James Gordon</p>
+          <p>Check out my latest creation: Kelvin Dart</p>
+          <p>Is Webble down for you guys?: Neville Griff</p>
+          <p>Welcome to the new website!: Daya Chitan</p>
+          <p>How can i add icons to m build: Diana Larry</p>
+        </article>
+      </section>
     </div>
   );
 };
