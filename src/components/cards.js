@@ -17,8 +17,8 @@ const Cards = () => {
               <div className='circle'>
                 <FontAwesomeIcon className='icon' icon={faDownload} />
               </div>
-              <Card.Title>Resources</Card.Title>
-              <Card.Text>
+              <Card.Title className='card_title'>Resources</Card.Title>
+              <Card.Text className='card_text'>
                 Check out free resourses & design tokens for your next projects.
               </Card.Text>
             </Card.Body>
@@ -30,8 +30,8 @@ const Cards = () => {
               <div className='circle'>
                 <FontAwesomeIcon className='icon' icon={faCommentAlt} />
               </div>
-              <Card.Title>Forums</Card.Title>
-              <Card.Text>
+              <Card.Title className='card_title'>Forums</Card.Title>
+              <Card.Text className='card_text'>
                 Join a community of thousands of customers just like you.
               </Card.Text>
             </Card.Body>
@@ -43,19 +43,25 @@ const Cards = () => {
               <div className='circle'>
                 <FontAwesomeIcon className='icon' icon={faHeadset} />
               </div>
-              <Card.Title>Contact Us</Card.Title>
-              <Card.Text>
+              <Card.Title className='card_title'>Contact Us</Card.Title>
+              <Card.Text className='card_text'>
                 Contact our support team. We'll do everything to help you.
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
       </div>
-      <div className='notify'>
-        <Card className='notifyMain'>
-          <Card.Body>
+      <div>
+        <Card className='notify'>
+          <Card.Body className='notify_main'>
             <Card.Text>
-              <Button variant='primary'>NEW</Button>
+              <Button
+                variant='primary'
+                className='notify_button'
+                aria-label='Hambuger menu'
+              >
+                NEW
+              </Button>
               We have updated our documentations, we added a new tutorials
               section. Check it out!
             </Card.Text>

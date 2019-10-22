@@ -66,8 +66,13 @@ input.search.form-control{
 }
 .section2{
   display: flex;
+  justify-content: space-between;
   height: auto;
   margin-top: 3rem;
+  padding: 3rem;
+  background: rgb(0,123,255);
+  background: linear-gradient(90deg, rgba(0,123,255,1) 73%, rgba(0,59,255,1) 90%);
+  color: white;
 }
 .icon{
   font-size: 4rem;
@@ -81,23 +86,45 @@ input.search.form-control{
   height: 120px;
   width: 120px;
   margin: 0 auto;
-  background: blue;
+  background-color: #007bff;
   border-radius: 50%;
 }
 
+.card_title{
+  margin-top: 2rem;
+  font-size: 2rem !important;
+}
+.card_text{
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
 .notify{
-  width: 70% !important;
+  width: 60% !important;
   text-align: center;
   margin: 0 auto;
+  border: 0 !important;
 }
-.notifyMain{
+.notify_main{
   border-radius: 40px !important;
+  padding: 8px !important;
+  background: rgb(211, 221, 236) !important;
+}
+.notify_button{
+  background: rgb(50, 197, 50) !important;
+  border-radius: 30px !important;
+  border-color:  rgb(50, 197, 50) !important;
+  margin-right: 1rem;
+  padding: 3px !important;
 }
 .card_body{
   text-align: center;
 }
 @media (max-width: 990px){
   .card_container{
+    flex-direction: column;
+  }
+  .section2{
     flex-direction: column;
   }
   .first_card, .second_card, .third_card{
