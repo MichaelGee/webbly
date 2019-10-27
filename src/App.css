@@ -20,12 +20,18 @@ span{
 Button{
   width: 7rem !important;
 }
+
+/* Section 1 */
  .section1{
    justify-content: center;
    text-align: center;
    padding: 5rem 0 5rem 0;
  }
 
+ .search-bar{
+   width: 50%;
+   margin: 0 auto;
+ }
 .input-group-text{
   background: white !important;
 }
@@ -51,29 +57,18 @@ input.search.form-control{
   
 }
 
-.card_container{
+/* Cards */
+ .first_card, .second_card, .third_card{
+  width: 22rem;
+  margin: 3vmin;
   display: flex;
-  align-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin-bottom: 3rem;
-  justify-content: space-between;
-}
-.first_card, .second_card, .third_card{
-  justify-content: space-between;
-  /* margin:  0 1.5rem; */
   
 }
-.section2{
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  margin-top: 3rem;
-  padding: 3rem;
-  background: rgb(0,123,255);
-  background: linear-gradient(90deg, rgba(0,123,255,1) 73%, rgba(0,59,255,1) 90%);
-  color: white;
+
+.card, .first_card, .second_card, .third_card{
+  border-radius: 8px !important;
 }
+
 .icon{
   font-size: 4rem;
   color: white;
@@ -90,14 +85,14 @@ input.search.form-control{
   border-radius: 50%;
 }
 
-.card_title{
+ .card_title{
   margin-top: 2rem;
   font-size: 2rem !important;
 }
 .card_text{
   margin-top: 2rem;
   font-size: 1.1rem;
-}
+} 
 
 .notify{
   width: 60% !important;
@@ -108,7 +103,7 @@ input.search.form-control{
 .notify_main{
   border-radius: 40px !important;
   padding: 8px !important;
-  background: rgb(211, 221, 236) !important;
+  background: rgb(193, 236, 220) !important;
 }
 .notify_button{
   background: rgb(50, 197, 50) !important;
@@ -119,10 +114,42 @@ input.search.form-control{
 }
 .card_body{
   text-align: center;
+} 
+
+
+/* Section 2 */
+.section2{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin-top: 3rem;
+  padding: 3rem;
+  background: rgb(0,123,255);
+  background: linear-gradient(90deg, rgba(0,123,255,1) 73%, rgba(0,59,255,1) 90%);
+  color: white;
 }
+
+/* Contact */
+
+.section3{
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  padding: 8rem;
+  background: rgb(193, 236, 220) !important;
+}
+.email{
+  width: 50%;
+  margin: 0 auto;
+}
+.email-btn{
+  display: inline;
+}
+
+/* Media Queries */
 @media (max-width: 990px){
   .card_container{
-    flex-direction: column;
+     flex-direction: column; 
   }
   .section2{
     flex-direction: column;
