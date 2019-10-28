@@ -11,20 +11,20 @@ export default function Contact() {
           on design, coding and marketing.
         </p>
         <div className='email'>
-          <Form>
-            <Form.Group>
-              <InputGroup>
-                <Form.Control
-                  type='text'
-                  placeholder='Search..'
-                  className='search'
-                />
-              </InputGroup>
-            </Form.Group>
-          </Form>
-          <Button variant='primary' className='email-btn'>
-            Sign In
-          </Button>
+          <form className='form'>
+            <div className='input-group'>
+              <input
+                type='text'
+                className='form-control'
+                placeholder='Email address...'
+              />
+              <div class='input-group-prepend'>
+                <Button variant='primary' className='email-btn'>
+                  Sign Up
+                </Button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </div>

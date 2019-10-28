@@ -138,13 +138,32 @@ input.search.form-control{
   padding: 8rem;
   background: rgb(193, 236, 220) !important;
 }
-.email{
-  width: 50%;
+
+
+.form{
+  width: 50% !important;
   margin: 0 auto;
+ 
 }
-.email-btn{
-  display: inline;
+
+.form, input{
+  border-right: white !important;
 }
+
+
+
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem;
+}
+
+.footer, a{
+  text-decoration: none !important;
+  color: black !important;
+}
+
 
 /* Media Queries */
 @media (max-width: 990px){
